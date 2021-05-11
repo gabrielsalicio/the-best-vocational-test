@@ -10,6 +10,22 @@ class App < Sinatra::Base
    erb :hello_template
   end
 
+  post "/careers" do
+    data = JSON.parse request.body.read
+    career =  Career.new(name: data['name'])
+    
+    if career.save 
+      [201, {'location' => "careers/#{career.id}" }, 'CREATED']
+    else
+      [500,{}, 'Interal Server Error']
+    end
+  end
+
+  get "/careers" do
+    Career.all.map {|c| c.name}
+  end
+
+
   post "/posts" do
     request.body.rewind  # in case someone already read it
     data = JSON.parse request.body.read
