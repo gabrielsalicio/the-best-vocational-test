@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Vocational Test</title>
+</head>
+<body>
+<h1> surveys </h1>
+
+<ul>
+    <% @questions.map do |question| %>
+        <li>
+            <h2> <%= @question.name %> </h2> 
+            (<%= question.number %>) <br><hr>
+            <p> <% @questions.description %> </p>
+        </li>
+    <% end %>
+</ul>
+    
+</body>
+</html>
