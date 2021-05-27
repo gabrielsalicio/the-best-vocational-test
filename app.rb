@@ -2,7 +2,7 @@ require './models/init.rb'
 
 class App < Sinatra::Base
   get '/' do
-    "Hello World"
+    erb :landing
   end
 
   get "/hello/:name" do
@@ -22,9 +22,18 @@ class App < Sinatra::Base
   end
 
   get "/careers" do
-    Career.all.map {|c| c.name}
+    @careers = Career.all
+    erb :careers_index
   end
 
+  get "/questions" do
+    erb :questions_index
+  end
+
+  get "/surveys" do
+    @questions = Question.all
+    erb :surveys_index
+  end
 
   post "/posts" do
     request.body.rewind  # in case someone already read it
