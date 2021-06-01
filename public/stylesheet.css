@@ -1,0 +1,41 @@
+body {
+    background-image: url(./fondo\ test.png);
+    background-position: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: cursive;
+}
+
+#container{
+    padding-left: 180px;
+    padding-top: 300px;
+    padding-bottom: 30px;
+    color: rgb(98, 48, 163);
+}
+
+button{
+    background-color:none;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 2px solid rgb(98, 48, 163);
+    font-size: 29px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+    background-color:rgb(98, 48, 163);
+    color: white;
+}
+
+#ir_carreras{
+    text-decoration: none;
+    color: rgb(98, 48, 163);
+}
+
+#carreras{
+    padding-top: 30px;
+    padding-left: 180px;
+    color: rgb(98, 48, 163);
+}
