@@ -26,7 +26,7 @@ class ResponseTest < MiniTest::Unit::TestCase
         response4.survey_id   = survey.id
         response4.question_id = question.id
     
-    
+  
         # Assert
         assert_equal(response1.valid?, true)
         assert_equal(response2.valid?, false)
