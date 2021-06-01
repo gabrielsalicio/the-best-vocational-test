@@ -5,11 +5,6 @@ class App < Sinatra::Base
     erb :landing
   end
 
-  get "/hello/:name" do
-   @name = params[:name]
-   erb :hello_template
-  end
-
   post "/careers" do
     data = JSON.parse request.body.read
     career =  Career.new(name: data['name'])
@@ -30,9 +25,19 @@ class App < Sinatra::Base
     erb :questions_index
   end
 
-  get "/surveys" do
-    @questions = Question.all
-    erb :surveys_index
+  get '/surveys' do
+    Survey.all.map{ |survey| survey.name }
+  end
+
+  post "/surveys" do
+    @survey = Survey.new(name: params[:name])
+
+    if @survey.save
+      @questions = Question.all
+      erb :surveys_index
+    else
+      [500, {}, 'Internal Server Error']
+    end
   end
 
   post "/posts" do
@@ -49,6 +54,18 @@ class App < Sinatra::Base
   get '/posts' do
     p = Post.where(id: 1).last
     p.description
+  end
+
+  post '/responses' do
+    survey = Survey.find(id: params[:survey_id])
+    params[:question_id].each do |q_id|
+      r = Response.new(choice_id: params[:"#{q_id}"], survey_id: survey.id, question_id: q_id)
+      r.save
+    end
+
+    @career_result   = Career.find(id: survey.id_career_result(Career.all))
+    survey.career_id = @career_result
+    erb :outcome_index
   end
 end
 
