@@ -90,15 +90,63 @@ ques6 = Question.create(name: 'Pregunta N°6',
     number: 6, 
     type: 'Boolean')
 ques6.save
-    choice1_q6 = Choice.create(text: '1- SI', question: ques6)
+    choice1_q6 = Choice.create(text: '1- SI', question:ques6)
         Outcome.create(choice: choice1_q6, career: arte)
-    choice1_q6 = Choice.create(text: '2- NO', question: ques6)
+    choice1_q6 = Choice.create(text: '2- NO', question:ques6)
 
 ques7 = Question.create(name: 'Pregunta N°7', 
     description:'En general me intereso por las dificultades que ha tenido que atravesar la humanidad y cómo lo ha superado.', 
     number: 7, 
     type: 'Boolean')
 ques7.save
-    choice1_q7 = Choice.create(text: '1- SI', question: ques7)
+    choice1_q7 = Choice.create(text: '1- SI', question:ques7)
         Outcome.create(choice: choice1_q7, career: historia)
-    choice1_q7 = Choice.create(text: '2- NO', question: ques7)
+    choice1_q7 = Choice.create(text: '2- NO', question:ques7)
+
+ques8 = Question.create(name: 'Pregunta N°8', 
+    description:'Me apasiona leer y no me importa si el libro que elijo tiene muchas páginas,para mí es un gran entretenimiento.', 
+    number: 8, 
+    type: 'Boolean')
+ques8.save
+    choice1_q8 = Choice.create(text: '1- SI', question:ques8)
+        Outcome.create(choice: choice1_q8, career: literaruta)
+        Outcome.create(choice: choice1_q8, carrer: historia)
+    choice1_q8 = Choice.create(text: '2- NO', question:ques8)
+
+ques9 = Question.create(name: 'Pregunta N°9', 
+    description:'Me atrae conocer los procesos y las áreas que hacen funcionar a las empresas.', 
+    number: 9, 
+    type: 'Boolean')
+ques9.save
+    choice1_q9 = Choice.create(text: '1- SI', question:ques9)
+        Outcome.create(choice: choice1_q9, career: economia)
+    choice1_q9 = Choice.create(text: '2- NO', question:ques8)
+
+ques10 = Question.create(name: 'Pregunta N°10',
+    description:'Me siento identificado con el pensamiento de algunos filósofos y escritores.'
+    number: 10,
+    type: 'Boolean')
+ques10.save
+    choice_q10 = Choice.create(text: '1- SI', question:ques10)
+        Outcome.create(choice: choice_q10, carrer: filosofia)
+        Outcome.create(choice: choice_q10, carrer: historia)
+    choice_q10 = Choice.create(text: '2- NO', question:ques10)
+
+ques11 = Question.create(name: 'Pregunta N°11',
+    description:'Me encanta estudiar el cuerpo humano y conocer cómo funciona.Además, no me impresiona la sangre.'
+    number: 11,
+    type: 'Boolean')
+ques11.save
+    choice_q11 = Choice.create(text: '1- SI', question:ques11)
+        Outcome.create(choice: choice_q11, carrer: medicina)
+    choice_q11 = Choice.create(text: '2- NO', question:ques11)
+
+ques12 = Question.create(name: 'Pregunta N°12',
+    description:'Si pudiera elegir, pasaría mucho tiempo diseñando novedosos objetos o edificios en mi computadora.'
+    number: 12,
+    type: 'Boolean')
+ques12.save
+    choice_q12 = Choice.create(text: '1- SI', question:ques12)
+        Outcome.create(choice: choice_q12, carrer: computación)
+        Outcome.create(choice: choice_q12, carrer: arquitectura)
+    choice_q12 = Choice.create(text: '2- NO', question:ques12)
