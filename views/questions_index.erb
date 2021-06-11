@@ -6,6 +6,23 @@
     <title>Vocational Test</title>
 </head>
 <body>
-    
+    <title> Preguntas </title>
+
+
+
+    <form action = '/questions' method = 'POST'>
+	    <h4> Pregunta: <input type='name' name= 'question[name]'/></h4>
+	    <h4> Descripcion de la pregunta: <input type = 'description' name = 'question[description]'/></h4>
+	    <h4> Tipo de pregunta: <input type = 'type' name = 'question[type]'/></h4>
+	    <input type = 'submit' value = 'Aceptar'/>
+    </form>
+
+    <ul>
+	    <% @questions.map do |question| %> 
+	        <li>
+		        <a href = "questions/<%=question.id %>"> <%= question.name %>  (<%= question.description.to_s %>)
+	        </li>
+	    <% end %>
+    </ul>
 </body>
 </html>
