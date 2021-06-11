@@ -19,7 +19,14 @@ class SurveyTest < Minitest::Unit::TestCase
     end
 
     def test_survey_has_a_career
+        #Arrange    
+        career = Career.create(name: 'Computacion')
 
+        #Act    
+        survey = Survey.create(username: 'User 1', career_id: career.id)
+
+        #Assert
+        assert_equal(career.surveys.count, 1)
     end
 
 end
