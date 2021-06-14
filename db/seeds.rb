@@ -6,7 +6,7 @@ Question.all.map { |q| q.destroy }
 Response.all.map { |r| r.destroy }
 Survey.all.map { |s| s.destroy }
 
-#Create Career
+#Create Careers
 agronomia        = Career.create(name: 'Agronomia', description:'', duration: '')
 arquitectura     = Career.create(name: 'Arquitectura', description:'', duration: '')
 arte             = Career.create(name: 'Arte', description:'', duration: '')
@@ -30,13 +30,12 @@ ques1 = Question.create(name: 'Pregunta N°1',
     description:'Me trasladaría a una zona agrícola-ganadera para ejercer mi profesión.', 
     number: 1, 
     type: 'Multiple-Choice')
-    #Create Choice
+    #Create Choice for the question
 	choice1_q1 = Choice.create(text:'1- SI', question:ques1)
-        #Create Outcome
+        #Create Outcome for the choice
 		Outcome.create(choice: choice1_q1, career: veterinaria)
 		Outcome.create(choice: choice1_q1, career: agronomia)
 	choice2_q1 = Choice.create(text:'2- NO)', question:ques1)
-#Repeat for the rest of questions
 
 ques2 = Question.create(name:'Pregunta N°2', 
     description:'Tengo buena memoria y no me cuesta estudiar y retener fórmulas y palabras técnicas.', 
@@ -78,7 +77,7 @@ ques6 = Question.create(name: 'Pregunta N°6',
     description:'Sé quien es Andy Warhol y a qué movimiento artístico pertenece. Me apasiona conocer acerca del arte y sus exponentes.', 
     number: 6, 
     type: 'Multiple-Choice')
-    Choice.create(text: '1- SI', question:ques6)
+    choice1_q6 = Choice.create(text: '1- SI', question:ques6)
         Outcome.create(choice: choice1_q6, career: arte)
     choice1_q6 = Choice.create(text: '2- NO', question:ques6)
 
