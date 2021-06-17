@@ -3,34 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="styles_response.css">
+	<link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
 </head>
 <body >
 	<div>
-		<article id="form">
-			<form action='/responses' method='POST'>
-				<ol >
-					<% @questions.map do |question| %> 
-					<li id="preguntas"> 
-						<%= question.description %> 
-						<br> 
-						<ul>
-							<% question.choices.map do |choice| %> 
-							<input required type='radio' name='<%= question.id%>' value='<%= choice.id %>' > <%= choice.text %>
-							<br>
-							<% end %>
-							<input type='hidden' name='question_id[]' value='<%= question.id %>'>
-						</ul>
+		<form action='/responses' method='POST'>
+			<ul>
+				<% @questions.map do |question| %> 
+				<li id="ques"> 
+					<%= question.description %><br> 
+					<ul>
+						<% question.choices.map do |choice| %> 
+						<input required type='radio' name='<%= question.id%>' value='<%= choice.id %>' > <%= choice.text %><br>
 						<% end %>
-					</ol>
-					<input type='hidden' name='survey_id' value='<%= @user.id %>'>
-					<p id = "aviso">
-						<b> Debes seleecionar al menos una opcion de todas las preguntas.</b>
-					</p>
-					<input type = 'submit' value = 'Enviar respuestas'>
-				</form> 	
-			</article>
+						<input type='hidden' name='question_id[]' value='<%= question.id %>'>
+					</ul>
+					<% end %>
+				</li>
+			</ul>
+			<input type='hidden' name='survey_id' value='<%= @user.id %>'>
+			<p id = "alert">
+				<b> Debes seleecionar al menos una opcion de todas las preguntas.</b>
+			</p>
+			<input type = 'submit' value = 'Enviar respuestas'>
+		</form> 
 		</div>
-	</body>
-	</html>
+</body>
+</html>
 
