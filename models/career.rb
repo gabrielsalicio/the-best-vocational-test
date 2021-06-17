@@ -1,7 +1,6 @@
 class Career < Sequel::Model
     one_to_many :surveys
     one_to_many :outcomes
-    one_to_many :choices
 
     def validate 
 
