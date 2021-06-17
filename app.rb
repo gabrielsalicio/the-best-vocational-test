@@ -25,7 +25,7 @@ class App < Sinatra::Base
 
   #POST & GET of career
   post "/careers" do
-    career = Career.new(params[:name])
+    career = Career.new(name: params[:name])
     career.save
     redirect "/careers"
   end
@@ -35,16 +35,13 @@ class App < Sinatra::Base
     erb :careers_index
   end
 
-  get "/careers/:id" do
-    "Carrera"
-  end
 
     #POST & GET of questions
   post '/questions' do
     question = Question.new(name: params[:name])
 
     if question.save
-      [201, {'Location' => "careers/#{career.id}"}, 'Created']
+      [201, {'Location' => "careers/#{career.id}"}, 'CREATED']
     else
       [500, {}, 'Internal Server Error']
     end
@@ -92,7 +89,7 @@ class App < Sinatra::Base
     for response in @user.responses
       choice = Choice.find(id: response.choice_id)
 
-      for outcome in choice.outcome
+      for outcome in choice.outcomes
         res[outcome.career_id] += res[outcome.career_id]
       end
     end
