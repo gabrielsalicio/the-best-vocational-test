@@ -25,17 +25,18 @@ quimica          = Career.create(name: 'Química', description:'', duration: '')
 sociologia       = Career.create(name: 'Sociología', description:'', duration: '')
 veterinaria      = Career.create(name: 'Veterinaria', description:'', duration: '')
 
+
 #Create Questions
 ques1 = Question.create(name: 'Pregunta N°1', 
     description:'Me trasladaría a una zona agrícola-ganadera para ejercer mi profesión.', 
     number: 1, 
     type: 'Multiple-Choice')
     #Create Choice for the question
-	choice1_q1 = Choice.create(text:'1- SI', question:ques1)
+	choice1_q1 = Choice.create(text:'1- SI cargue', question:ques1)
         #Create Outcome for the choice
 		Outcome.create(choice: choice1_q1, career: veterinaria)
 		Outcome.create(choice: choice1_q1, career: agronomia)
-	choice2_q1 = Choice.create(text:'2- NO)', question:ques1)
+	choice2_q1 = Choice.create(text:'2- NO ', question:ques1)
 
 ques2 = Question.create(name:'Pregunta N°2', 
     description:'Tengo buena memoria y no me cuesta estudiar y retener fórmulas y palabras técnicas.', 
@@ -43,7 +44,7 @@ ques2 = Question.create(name:'Pregunta N°2',
     type: 'Multiple-Choice')
     choice1_q2 = Choice.create(text:'1- SI', question:ques2)
         Outcome.create(choice: choice1_q2, career: fisica)
-        Outcome.create(choice: choice1_q2, career: matemáticas)
+        Outcome.create(choice: choice1_q2, career: matematicas)
         Outcome.create(choice: choice1_q2, career: quimica)
         Outcome.create(choice: choice1_q2, career: computacion)
     choice2_q2 = Choice.create(text:'2- NO', question:ques2)
@@ -184,3 +185,5 @@ ques15 = Question.create(name: 'Pregunta°15',
 Survey.create(username: 'Dikjastra', career: computacion)
 Survey.create(username: 'Alan', career: computacion)
 Survey.create(username: 'Doc. Dulittle', career: veterinaria)
+
+
