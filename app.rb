@@ -76,8 +76,8 @@ class App < Sinatra::Base
     @user = Survey.find(id: params[:survey_id])  
 
     params[:question_id].each do |question_id|
-      resActu = Response.new(survey_id: @user.id, question_id: question_id, chioce_id: params[:"#{question_id}"])
-      resACtu.save
+      resActu = Response.new(survey_id: @user.id, question_id: question_id, choice_id: params[:"#{question_id}"])
+      resActu.save
     end
 
     res = {}
