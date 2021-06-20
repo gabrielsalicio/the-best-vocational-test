@@ -73,7 +73,7 @@ class App < Sinatra::Base
 
   #POST & GET of responses 
   post '/responses' do
-    @user = Survey.find(id: params[:survey_id])  
+    @user = Survey.find(id: params[:survey_id]) 
 
     params[:question_id].each do |question_id|
       resActu = Response.new(survey_id: @user.id, question_id: question_id, choice_id: params[:"#{question_id}"])
@@ -90,7 +90,7 @@ class App < Sinatra::Base
       choice = Choice.find(id: response.choice_id)
 
       for outcome in choice.outcomes
-        res[outcome.career_id] += res[outcome.career_id]
+        res[outcome.career_id] = res[outcome.career_id] + 1
       end
     end
     
