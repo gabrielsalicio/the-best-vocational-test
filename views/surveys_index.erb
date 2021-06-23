@@ -3,23 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>Registrarse</title>
-	<link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
+    <link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body >
 	<nav class="nav-nav">
       <a href="/" class="nav-link">Inicio</a>
+      <a href="careers" class="nav-link">Carreras</a>
     </nav>
 
 	<div id="form-user">
 		<form action="/surveys" method="POST">
-			<label for="username">Ingrese su nombre</label>
-			<input required type="text" name="username" value= "">
-			<input type = 'submit' value = 'Aceptar'>
+			<label form="username">Ingrese su nombre</label>
+			<input required type="text" name="username" id="username-input">
+			<a href="responses"><input type='submit' value = 'Empezar Test' id="username-input"></a>
 		</form>
 	</div>
-	<div id="careers-surveys">
-		<h4> Para conocer todas las carreras y elegir cual sera tu futuro entra aqui! </h4>
-   		<a href ="careers" id="career-button"> Carreras </a>
-    </div>
 </body>
 </html>

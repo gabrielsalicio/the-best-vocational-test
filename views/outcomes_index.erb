@@ -3,23 +3,33 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8"/>
-		<title> Outcome </title>
-		<link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
+		<title> Respuesta </title>
+    	<link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<nav>
+		<nav style="text-align:center;
+    			display: flex;
+    			justify-content: center;
+				margin-bottom: 5rem;
+				font-size:20px;">
       		<a href="/" class="nav-link">Inicio</a>
+      		<a href="careers" class="nav-link">Carreras</a>
       		<a href="surveys" class="nav-link">Test</a>
     	</nav>
-		<div class="title">
-			<h2> Tenemos la carrera perfecta para vos: </h2>
-		</div>
-
-		<h1> <%= @career.name %> <br> </h1>
-
-		<div class="list_careers">
-			<h2><a href="careers">Carreras disponibles </a> </h2>
+		<div style="color: var(--color-main);
+				font-size:20px;
+				padding:5rem;
+				text-align:center;">
+			<b><h2>¡Tenemos la carrera perfecta para vos!</h2></b>
+			<h1 style="text-shadow: var(--shadow-def);
+					font-size:60px;
+					margin:5rem;">
+				<%= @career.name %>
+			</h1>
 		</div>
 
 	</body> 
