@@ -34,8 +34,8 @@ class App < Sinatra::Base
     @careers = Career.all
     erb :careers_index
   end
-
-
+  
+  
     #POST & GET of questions
   post '/questions' do
     question = Question.new(name: params[:name])
