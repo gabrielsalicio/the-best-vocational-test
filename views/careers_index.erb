@@ -1,22 +1,26 @@
 <!doctype html>
-
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Vocational Test</title>
-  <link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
-</head>
-<body>
-    <h1> Listado de Carreras </h1>
+  <head>
+    <meta charset="utf-8">
+    <title>Vocational Test</title>
+    <link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
+  </head>
+  <body>
+    <nav class="nav-nav">
+      <a href="/" class="nav-link">Inicio</a>
+      <a href="surveys" class="nav-link">Test</a>
+    </nav>
 
-    <ul id="list">
+    <div class="container-careers">
+      <h1> Listado de Carreras </h1>
+      <ul id="list">
         <% @careers.map do |career| %>
         <li>
-            <%= career.name %>
-            (<%=career.surveys.count.to_s %>)
+          <h4><%= career.name %></h4>
+          <p>Catidad de resultados de esta carrera en los test: <%=career.surveys.count.to_s %><p>
         </li>
         <% end %>
-    </ul>
-
-</body>
+      </ul>
+    </div>
+  </body>
 </html>

@@ -1,41 +1,158 @@
 body {
     background-image: url(./fondo\ test.png);
+    padding: 2em;
     background-position: fixed;
     background-size: cover;
     background-attachment: fixed;
     font-family: cursive;
+    text-decoration: none;
+}
+/*style for te navbar*/
+.nav-link:hover{
+    background-color:rgba(98, 48, 163, 0.5);
+    color: #EEEEEE;
 }
 
-#container{
-    padding-left: 180px;
-    padding-top: 300px;
-    padding-bottom: 30px;
+.nav-link{
+    padding:10px 70px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(98, 48, 163) ;
+    border-top: 3px solid rgb(98, 48, 163);
     color: rgb(98, 48, 163);
 }
 
-button{
+.nav-nav{
+    text-align:center;
+    display: flex;
+    justify-content: center;
+}
+
+/*style for the landing page*/ 
+#container{
+    padding:40px;
+    display:flexbox;
+    justify-content: center;
+    color: rgb(98, 48, 163);
+    border-bottom: 3px solid rgb(98, 48, 163);
+    margin-right: 35%;
+    font-size: 20px;
+}
+#container h1{
+    text-align: center;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+#test-button{
+    padding:10px;
     background-color:none;
     text-decoration: none;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0);
-    color: black;
+    color: rgb(98, 48, 163);
     border: 2px solid rgb(98, 48, 163);
     font-size: 29px;
-    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-button:hover{
-    background-color:rgb(98, 48, 163);
-    color: white;
-}
-
-#ir_carreras{
+    box-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;;
     text-decoration: none;
-    color: rgb(98, 48, 163);
 }
 
-#carreras{
-    padding-top: 30px;
-    padding-left: 180px;
+#test-button:hover{
+    background-color:rgb(98, 48, 163);
+    color:white;
+}
+
+#careers{
+    padding-left:40px;
     color: rgb(98, 48, 163);
+    margin-right: 35%;
+    font-size: 20px;
+}
+#careers a{
+    text-align: center;
+}
+
+#career-button{
+    padding:5px;
+    background-color:none;
+    text-decoration: none;
+    border-radius: 12px;
+    color: rgb(98, 48, 163);
+    border: 2px solid rgb(98, 48, 163);
+    font-size: 29px;
+    box-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    text-decoration: none;
+}
+#career-button:hover{
+    background-color:rgb(98, 48, 163);
+    color:white;
+}
+
+/*stryle for the surveys page*/
+#form-user{
+    color: rgb(98, 48, 163);
+    font-size: 20px;
+    padding: 70px;
+    text-align: center;
+    padding-right: 50rem;
+}
+input{
+    background-color:transparent;
+    border: 2px solid rgb(98, 48, 163);
+    width: 50%;
+    color: rgb(98, 48, 163);
+    font-size:20px;
+    padding:10px;
+}
+input:hover{
+    border: none;
+    background-color:rgb(98, 48, 163);
+    color:white;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(98, 48, 163);
+    border-radius: 4px;
+    background-color:transparent;
+}
+input[type=text]:focus {
+    outline: none;
+  }
+
+#careers-surveys{
+    padding-top: 50px;
+    padding-left:40px;
+    color: rgb(98, 48, 163);
+    margin-right: 35%;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*style for the careers page*/
+.container-careers h1{
+    color: rgb(98, 48, 163);
+    font-size:35px;
+    text-shadow:1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    border: 2px solid rgb(98, 48, 163);
+    padding: 10px;
+    margin-right: 40rem;
+    text-align: center;
+}
+#list {
+    color: rgb(98, 48, 163);
+    list-style: none;
+    padding-right: 20rem;
+}
+#list li{
+    font-size: 30px;
+}
+#list h4{
+    text-decoration: underline;
+}
+#list li p{
+    font-size:15px;
+    text-decoration: none;
 }

@@ -6,12 +6,20 @@
 	<link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
 </head>
 <body >
-	<div id="form">
+	<nav class="nav-nav">
+      <a href="/" class="nav-link">Inicio</a>
+    </nav>
+
+	<div id="form-user">
 		<form action="/surveys" method="POST">
-			<label for="username">Usuario</label>
+			<label for="username">Ingrese su nombre</label>
 			<input required type="text" name="username" value= "">
 			<input type = 'submit' value = 'Aceptar'>
-		</form> <br />
+		</form>
 	</div>
+	<div id="careers-surveys">
+		<h4> Para conocer todas las carreras y elegir cual sera tu futuro entra aqui! </h4>
+   		<a href ="careers" id="career-button"> Carreras </a>
+    </div>
 </body>
 </html>
