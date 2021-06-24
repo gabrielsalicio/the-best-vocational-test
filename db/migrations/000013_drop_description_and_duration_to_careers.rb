@@ -8,3 +8,4 @@ Sequel.migration do
     add_column :careers, :description, String
     add_column :careers, :duration, Integer
   end
+end
