@@ -59,6 +59,7 @@ class App < Sinatra::Base
 
     if @user.save
       @questions = Question.all
+      @last_survey = Survey.last
       erb :responses_index
     else
       [500, {}, 'Internal Server Error']
@@ -74,7 +75,7 @@ class App < Sinatra::Base
   #POST & GET of responses 
   post '/responses' do
     @user = Survey.find(id: params[:survey_id]) 
-
+    @last_survey = Survey.last
     params[:question_id].each do |question_id|
       resActu = Response.new(survey_id: @user.id, question_id: question_id, choice_id: params[:"#{question_id}"])
       resActu.save

@@ -24,7 +24,7 @@
 			font-size: 20px;
 			margin-left:7rem;
 			">
-		<p> ¡Todas las preguntas deben ser respondidas y solo se admite una respuesta por pregunta! </p>
+		<p> ¡ <%= @last_survey.username.upcase %>, todas las preguntas deben ser respondidas y solo se admite una respuesta por pregunta! </p>
 	</div>
 	<div>
 		<form action='/responses' method='POST'>
