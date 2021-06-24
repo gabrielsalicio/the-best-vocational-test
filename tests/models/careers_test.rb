@@ -4,13 +4,13 @@ class CareerTest < Minitest::Unit::TestCase
     Minitest::Unit::TestCase
 
     def test_career_may_has_many_surveys
-        # Arrange
+        # Arrange -> create data to test
         career = Career.create(name: 'Spaceman')
-        # Act
+        # Act -> run test
         Survey.create(username: 'User1', career_id: career.id)
         Survey.create(username: 'User2', career_id: career.id)
         Survey.create(username: 'User3', career_id: career.id)
-        # Assert
+        # Assert -> whats happend?
         assert_equal(career.surveys.count, 3)
     end
 
