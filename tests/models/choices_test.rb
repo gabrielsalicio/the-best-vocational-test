@@ -8,6 +8,7 @@ class ChoiceTest < MiniTest::Unit::TestCase
         choice1 = Choice.new
         choice2 = Choice.new
         choice3 = Choice.new
+        
         # Act
         choice1.text = 'Choice test'
         choice2.text = nil

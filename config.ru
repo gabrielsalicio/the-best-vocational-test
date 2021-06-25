@@ -16,4 +16,3 @@ DB = Sequel.connect(
 root = ::File.dirname(__FILE__)
 require ::File.join(root, 'app')
 run App.new
-

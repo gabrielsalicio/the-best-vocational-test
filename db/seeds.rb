@@ -1,9 +1,9 @@
 #Clean Dataset
 Response.all.map { |r| r.destroy }
-Survey.all.map { |s| s.destroy }
-Outcome.all.map { |o| o.destroy }
-Choice.all.map { |ch| ch.destroy }
-Career.all.map { |c| c.destroy }
+Survey.all.map   { |s| s.destroy }
+Outcome.all.map  { |o| o.destroy }
+Choice.all.map   { |ch| ch.destroy }
+Career.all.map   { |c| c.destroy }
 Question.all.map { |q| q.destroy }
 
 #Create Careers
@@ -18,7 +18,7 @@ fisica           = Career.create(name: 'Física')
 geologia         = Career.create(name: 'Geología')
 historia         = Career.create(name: 'Historia')
 literaruta       = Career.create(name: 'Literaruta')
-matematica      = Career.create(name: 'Matemáticas')
+matematica       = Career.create(name: 'Matemáticas')
 medicina         = Career.create(name: 'Medicina')
 periodismo       = Career.create(name: 'Periodismo')
 quimica          = Career.create(name: 'Química')
@@ -202,4 +202,3 @@ ques15 = Question.create(name: 'Pregunta°15',
      en el ranking de notas a celebridades.', question:ques15)
         Outcome.create(choice: choice5_q15, career: periodismo)
     choice6_q15 = Choice.create(text: '6- Ninguna de las opciones.', question:ques15)
-

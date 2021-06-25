@@ -12,6 +12,7 @@ class ResponseTest < MiniTest::Unit::TestCase
         question = Question.create(:name => 'Question', :description => 'description', :number => 1, :type => 'personal')
         choice = Choice.create(:text => 'choice')
         survey = Survey.create(:username => "User")
+        
         # Act
         response1.question_id = question.id
         response1.choice_id   = choice.id
@@ -26,7 +27,6 @@ class ResponseTest < MiniTest::Unit::TestCase
         response4.survey_id   = survey.id
         response4.question_id = question.id
     
-  
         # Assert
         assert_equal(response1.valid?, true)
         assert_equal(response2.valid?, false)

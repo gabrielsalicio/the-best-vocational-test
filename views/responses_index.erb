@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">	
 </head>
 <body >
+
 	<nav style="text-align:center;
     			display: flex;
     			justify-content: center;
@@ -18,14 +19,17 @@
       <a href="careers" class="nav-link">Carreras</a>
       <a href="surveys" class="nav-link">Atrás</a>
     </nav>	
+
 	<div style="
 			color: var(--color-main);
 			padding: 12px;
 			font-size: 20px;
 			margin-left:7rem;
 			">
-		<p> ¡ <%= @last_survey.username.upcase %>, todas las preguntas deben ser respondidas y solo se admite una respuesta por pregunta! </p>
+		<p> ¡ <%= @last_survey.username.upcase %>, todas las preguntas deben ser 
+			respondidas y solo se admite una respuesta por pregunta! </p>
 	</div>
+
 	<div>
 		<form action='/responses' method='POST'>
 			<ul>
@@ -41,7 +45,8 @@
 					<b><%= question.description %><br></b>
 					<ul>
 						<% question.choices.map do |choice| %> 
-						<i><input required type='radio' name='<%= question.id%>' value='<%= choice.id %>' > <%= choice.text %><br></i>
+						<i><input required type='radio' name='<%= question.id%>' value='<%= choice.id %>' >
+							 <%= choice.text %><br></i>
 						<% end %>
 						<input type='hidden' name='question_id[]' value='<%= question.id %>'>
 					</ul>
@@ -60,7 +65,8 @@
 																text-decoration: none;
 																margin-left:24rem">
 		</form> 
-		</div>
+	</div>
+
 </body>
 </html>
 

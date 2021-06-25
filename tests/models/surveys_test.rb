@@ -28,5 +28,4 @@ class SurveyTest < Minitest::Unit::TestCase
         #Assert
         assert_equal(career.surveys.count, 1)
     end
-
 end

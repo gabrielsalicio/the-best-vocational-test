@@ -23,20 +23,14 @@ class App < Sinatra::Base
   end
 
 
-  #POST & GET of career
-  post "/careers" do
-    career = Career.new(name: params[:name])
-    career.save
-    redirect "/careers"
-  end
-
+  #GET of career
   get "/careers" do
     @careers = Career.all
     erb :careers_index
   end
   
   
-    #POST & GET of questions
+  #POST & GET of questions
   post '/questions' do
     question = Question.new(name: params[:name])
 
@@ -77,7 +71,8 @@ class App < Sinatra::Base
     @user = Survey.find(id: params[:survey_id]) 
     @last_survey = Survey.last
     params[:question_id].each do |question_id|
-      resActu = Response.new(survey_id: @user.id, question_id: question_id, choice_id: params[:"#{question_id}"])
+      resActu = Response.new(survey_id: @user.id, question_id: question_id,
+        choice_id: params[:"#{question_id}"])
       resActu.save
     end
 
@@ -103,4 +98,3 @@ class App < Sinatra::Base
   end
 
 end
-
