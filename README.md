@@ -15,3 +15,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * **Camilo Petrignani Gorla** - [Perfil Camilo](https://github.com/camilo-pg)
 * **Gaston Martin** - [Perfil Gaston](https://github.com/Gaaston12)
 
+# Presentation
+
+[Google Presentation](https://docs.google.com/presentation/d/1skfgTtVRbALXleCGxqdW478QAFceFj2uX_rt1LO3_3c/edit)
