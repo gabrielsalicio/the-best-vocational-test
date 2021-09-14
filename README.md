@@ -8,8 +8,8 @@ Clone teh repository
 - git clone https://github.com/gabrielsalicio/the-best-vocational-test.git
 - cd  the-best-vocational-test
 - Project is Dockerized so `docker-compose up --build` 
-- ** Populate Database **
-- docker exec -it <docker-container-id> sequel postgres://<db-usernaem>:<db-password>@db/vocational-test
+Populate Database
+- docker exec -it [docker-container-id] sequel postgres://[db-usernaem]:[db-password]@db/vocational-test
 - require 'sinatra'
 - require_relative 'app.rb'
 - require_relative 'db/seeds.rb'
