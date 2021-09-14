@@ -1,11 +1,11 @@
 Sequel.migration do 
     up do
-        add.column :careers, :description, String
-        add.column :careers, :image, String
+        add_column :careers, :description, String
+        add_column :careers, :image, String
     end
     
     down do
-        drop.column :careers, :description
-        drop.column :careers, :image
+        drop_column :careers, :description
+        drop_column :careers, :image
     end
 end
