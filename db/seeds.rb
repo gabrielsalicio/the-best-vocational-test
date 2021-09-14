@@ -7,23 +7,75 @@ Career.all.map   { |c| c.destroy }
 Question.all.map { |q| q.destroy }
 
 #Create Careers
-agronomia        = Career.create(name: 'Agronomia')
-arquitectura     = Career.create(name: 'Arquitectura')
-arte             = Career.create(name: 'Arte')
-computacion      = Career.create(name: 'Computación')
-economia         = Career.create(name: 'Economía')
-educacion_fisica = Career.create(name: 'Educación física')
-filosofia        = Career.create(name: 'Filosofía')
-fisica           = Career.create(name: 'Física')
-geologia         = Career.create(name: 'Geología')
-historia         = Career.create(name: 'Historia')
-literaruta       = Career.create(name: 'Literaruta')
-matematica       = Career.create(name: 'Matemáticas')
-medicina         = Career.create(name: 'Medicina')
-periodismo       = Career.create(name: 'Periodismo')
-quimica          = Career.create(name: 'Química')
-sociologia       = Career.create(name: 'Sociología')
-veterinaria      = Career.create(name: 'Veterinaria')
+agronomia        = Career.create(name: 'Agronomia', 
+image: 'http://www.ayv.unrc.edu.ar/images/principal/logo.png', 
+description:'La formación de grado en la Facultad de Agronomía y Veterinaria tiene la finalidad de brindar a la sociedad un profesional universitario capacitado integralmente para comprender, orientar, modificar, conducir o transformar sistemas productivos agroalimentarios, tanto en la escala predial, regional, nacional o macroregional.')
+
+arquitectura     = Career.create(name: 'Arquitectura', 
+image:'',
+description:'La carrera de Arquitectura tiene como objetivo fundamental formar profesionales aptos para diseñar, programar, dirigir y construir los edificios y espacios necesarios para albergar las actividades del hombre en sociedad, satisfaciendo las necesidades y aspiraciones que ésta demanda')
+
+arte             = Career.create(name: 'Arte',
+image:'',
+description:'La Carrera de Artes se dedica al estudio de la Teoría de las Artes, su historia y las diversas manifestaciones artísticas que de ella se desprenden, a través de reflexiones conceptuales y críticas.')
+
+computacion      = Career.create(name: 'Computación', 
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+economia         = Career.create(name: 'Economía', 
+image: 'https://i1.wp.com/www.eco.unrc.edu.ar/seccion/grado/wp-content/uploads/sites/12/2016/07/grado-1.png?w=400&ssl=1', 
+description:'')
+
+
+educacion_fisica = Career.create(name: 'Educación física', 
+image: '',
+description:'El egresado está capacitado para ocupar un espacio como enlace pedagógico en el área deportiva, tanto a nivel conceptual como en actitud. ... Las materias más importantes de la carrera son la nutrición, la fisiología, los diferentes deportes y su reglamento, técnicas didácticas y pedagogía.')
+
+filosofia        = Career.create(name: 'Filosofía',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+fisica           = Career.create(name: 'Física',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+geologia         = Career.create(name: 'Geología',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+historia         = Career.create(name: 'Historia',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+literaruta       = Career.create(name: 'Literaruta',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+matematica       = Career.create(name: 'Matemáticas',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+medicina         = Career.create(name: 'Medicina',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+periodismo       = Career.create(name: 'Periodismo',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+quimica          = Career.create(name: 'Química',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+sociologia       = Career.create(name: 'Sociología',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
+veterinaria      = Career.create(name: 'Veterinaria',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
+description:'')
+
 
 
 #Create Questions
