@@ -28,7 +28,11 @@ class App < Sinatra::Base
     @careers = Career.all
     erb :careers_index
   end
-  
+  #GET careers by id
+  get '/careers/:id' do
+    @career = Career.find(id: params[:id])
+    erb :careers_template
+  end
   
   #POST & GET of questions
   post '/questions' do
