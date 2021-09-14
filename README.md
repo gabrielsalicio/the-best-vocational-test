@@ -2,9 +2,18 @@
 
 This is a basic scaffold project used to learn/teach Sinatra using Sequel ORM.
 
-# Usage
+# Usage - local setup
 
-Project is Dockerized so `docker-compose up --build` and then point your browser to http://localhost:9292/
+Clone teh repository 
+- git clone https://github.com/gabrielsalicio/the-best-vocational-test.git
+- cd  the-best-vocational-test
+- Project is Dockerized so `docker-compose up --build` 
+- ** Populate Database **
+- docker exec -it <docker-container-id> sequel postgres://<db-usernaem>:<db-password>@db/vocational-test
+- require 'sinatra'
+- require_relative 'app.rb'
+- require_relative 'db/seeds.rb'
+- Point your browser to http://localhost:9292/
 
 # Licence
 
@@ -19,3 +28,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 # Presentation
 
 [Google Presentation](https://docs.google.com/presentation/d/1skfgTtVRbALXleCGxqdW478QAFceFj2uX_rt1LO3_3c/edit)
+
+
