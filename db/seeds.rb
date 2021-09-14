@@ -12,69 +12,69 @@ image: 'http://www.ayv.unrc.edu.ar/images/principal/logo.png',
 description:'La formación de grado en la Facultad de Agronomía y Veterinaria tiene la finalidad de brindar a la sociedad un profesional universitario capacitado integralmente para comprender, orientar, modificar, conducir o transformar sistemas productivos agroalimentarios, tanto en la escala predial, regional, nacional o macroregional.')
 
 arquitectura     = Career.create(name: 'Arquitectura', 
-image:'',
+image:'https://www.unrc.edu.ar/imgs/top-a-cel.png',
 description:'La carrera de Arquitectura tiene como objetivo fundamental formar profesionales aptos para diseñar, programar, dirigir y construir los edificios y espacios necesarios para albergar las actividades del hombre en sociedad, satisfaciendo las necesidades y aspiraciones que ésta demanda')
 
 arte             = Career.create(name: 'Arte',
-image:'',
+image:'https://www.unrc.edu.ar/imgs/top-a-cel.png',
 description:'La Carrera de Artes se dedica al estudio de la Teoría de las Artes, su historia y las diversas manifestaciones artísticas que de ella se desprenden, a través de reflexiones conceptuales y críticas.')
 
 computacion      = Career.create(name: 'Computación', 
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Esta licenciatura está orientada a la creación y mantenimiento de software de aplicación, así como de sistemas de información de todo tipo, desde los requeridos por la pequeña y mediana empresa hasta los muy elaborados y complejos que se emplean en organizaciones que manejan bancos de datos y redes de computadoras.')
 
 economia         = Career.create(name: 'Economía', 
 image: 'https://i1.wp.com/www.eco.unrc.edu.ar/seccion/grado/wp-content/uploads/sites/12/2016/07/grado-1.png?w=400&ssl=1', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 
 educacion_fisica = Career.create(name: 'Educación física', 
-image: '',
+image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png',
 description:'El egresado está capacitado para ocupar un espacio como enlace pedagógico en el área deportiva, tanto a nivel conceptual como en actitud. ... Las materias más importantes de la carrera son la nutrición, la fisiología, los diferentes deportes y su reglamento, técnicas didácticas y pedagogía.')
 
 filosofia        = Career.create(name: 'Filosofía',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'¿Qué es la Carrera en Filosofía? La licenciatura en Filosofía es una de las más enriquecedoras. En esta licenciatura se desarrolla la capacidad de razonamiento, la lógica, la argumentación y la crítica para brindar soluciones efectivas a los problemas cotidianos y trascendentales de la vida')
 
 fisica           = Career.create(name: 'Física',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 geologia         = Career.create(name: 'Geología',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 historia         = Career.create(name: 'Historia',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 literaruta       = Career.create(name: 'Literaruta',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 matematica       = Career.create(name: 'Matemáticas',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 medicina         = Career.create(name: 'Medicina',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 periodismo       = Career.create(name: 'Periodismo',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 quimica          = Career.create(name: 'Química',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 sociologia       = Career.create(name: 'Sociología',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 veterinaria      = Career.create(name: 'Veterinaria',
 image: 'https://www.unrc.edu.ar/imgs/top-a-cel.png', 
-description:'')
+description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
 
 
 
