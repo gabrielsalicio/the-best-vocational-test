@@ -134,3 +134,59 @@ label{
     font-size:15px;
     text-decoration: none;
 }
+.outcomes-menu {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+	margin-bottom: 5rem;
+	font-size:20px;
+}
+.outcomes-message {
+    color: var(--color-main);
+	font-size:20px;
+	padding:5rem;
+	text-align:center;
+}
+.outcomes-result {
+    text-shadow: var(--shadow-def);
+	font-size:60px;
+	margin:5rem;
+}
+.response-menu {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size:25px;
+}
+.response-message {
+    color: var(--color-main);
+	padding: 12px;
+	font-size: 20px;
+	margin-left:7rem;
+}
+.responses-question {
+    color: var(--color-main);
+	border: 2px solid var(--color-main);
+	padding:12px;
+	list-style: none;
+	margin:8px;
+	margin-right:50rem;
+	border-radius: 20px;
+}
+.response-submit{
+    padding:5px;
+    background-color:none;
+	text-decoration: none;
+	border-radius: 12px;
+	color: var(--color-main);
+	border: 2px solid var(--color-main);
+	font-size: 29px;
+	box-shadow: var(--shadow-def);
+	text-decoration: none;
+	margin-left:24rem
+}
+.career-image{
+    width:50px;
+    height:50px;
+}

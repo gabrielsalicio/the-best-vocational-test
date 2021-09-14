@@ -10,22 +10,13 @@
 </head>
 <body >
 
-	<nav style="text-align:center;
-    			display: flex;
-    			justify-content: center;
-				margin-bottom: 3rem;
-				font-size:25px;">
+	<nav class="response-menu">
       <a href="/" class="nav-link">Inicio</a>
       <a href="careers" class="nav-link">Carreras</a>
       <a href="surveys" class="nav-link">Atrás</a>
     </nav>	
 
-	<div style="
-			color: var(--color-main);
-			padding: 12px;
-			font-size: 20px;
-			margin-left:7rem;
-			">
+	<div class="response-message">
 		<p> ¡ <%= @last_survey.username.upcase %>, todas las preguntas deben ser 
 			respondidas y solo se admite una respuesta por pregunta! </p>
 	</div>
@@ -34,14 +25,7 @@
 		<form action='/responses' method='POST'>
 			<ul>
 				<% @questions.map do |question| %> 
-				<li id="ques" style="
-								color: var(--color-main);
-								border: 2px solid var(--color-main);
-								padding:12px;
-								list-style: none;
-								margin:8px;
-								margin-right:50rem;
-								border-radius: 20px;"> 
+				<li id="ques" class="responses-question"> 
 					<b><%= question.description %><br></b>
 					<ul>
 						<% question.choices.map do |choice| %> 
@@ -54,16 +38,7 @@
 				</li>
 			</ul>
 			<input type='hidden' name='survey_id' value='<%= @user.id %>'>
-			<input type = 'submit' value = 'Enviar respuestas' style="padding:5px;
-    															background-color:none;
-																text-decoration: none;
-																border-radius: 12px;
-																color: var(--color-main);
-																border: 2px solid var(--color-main);
-																font-size: 29px;
-																box-shadow: var(--shadow-def);
-																text-decoration: none;
-																margin-left:24rem">
+			<input type = 'submit' value = 'Enviar respuestas' class="response-submit">
 		</form> 
 	</div>
 

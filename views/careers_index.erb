@@ -21,7 +21,7 @@
         <% @careers.map do |career| %>
         <li>
           <h4><%= career.name %></h4>
-          <img src="<%=career.image %>" alt="Career img" width="500" height="500">
+          <img src="<%=career.image %>" alt="Career img" class="career-image" >
           <p> <%=career.description %></p>
           <p>Cantidad de resultados de esta carrera en los test: <%=career.surveys.count.to_s %><p>
         </li>
