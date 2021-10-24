@@ -101,4 +101,8 @@ class App < Sinatra::Base
     erb :outcomes_index
   end
 
+  get "/inquiries" do
+    erb :inquiries
+  end
+
 end
