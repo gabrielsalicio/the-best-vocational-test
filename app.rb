@@ -102,6 +102,19 @@ class App < Sinatra::Base
   end
 
   get "/inquiries" do
+    @careers = Career.all
+    erb :inquiries
+  end
+
+  post '/inquiries' do
+    @careers = Career.all
+    @begin_date = params[:begin_date]
+    @end_date = params[:end_date]
+    @select_career = params[:select_career].to_i
+    @result = Survey.where(
+          :created_at => @begin_date .. @end_date,
+          :career_id => @select_career
+        ).all.count
     erb :inquiries
   end
 
