@@ -2,7 +2,7 @@ require './models/init.rb'
 
 class App < Sinatra::Base
   get '/' do
-    erb :landing
+    erb :landing, :layout => :main
   end
 
   #POST & GET of posts
@@ -26,7 +26,7 @@ class App < Sinatra::Base
   #GET of career
   get "/careers" do
     @careers = Career.all
-    erb :careers_index
+    erb :careers_index, :layout => :main
   end
   #GET careers by id
   get '/careers/:id' do
@@ -58,7 +58,7 @@ class App < Sinatra::Base
     if @user.save
       @questions = Question.all
       @last_survey = Survey.last
-      erb :responses_index
+      erb :responses_index, :layout => :main
     else
       [500, {}, 'Internal Server Error']
     end
@@ -66,7 +66,7 @@ class App < Sinatra::Base
 
   get '/surveys' do
     @survey = Survey.new(username: params[:username])
-    erb :surveys_index
+    erb :surveys_index, :layout => :main
   end
 
 
@@ -98,12 +98,12 @@ class App < Sinatra::Base
     @career = Career.find(id: resCar)
     @user.update(career_id: @career.id)
 
-    erb :outcomes_index
+    erb :outcomes_index, :layout => :main
   end
 
   get "/inquiries" do
     @careers = Career.all
-    erb :inquiries
+    erb :inquiries, :layout => :main
   end
 
   post '/inquiries' do
@@ -115,7 +115,7 @@ class App < Sinatra::Base
           :created_at => @begin_date .. @end_date,
           :career_id => @select_career
         ).all.count
-    erb :inquiries
+    erb :inquiries, :layout => :main
   end
 
 end
