@@ -111,10 +111,7 @@ class App < Sinatra::Base
     @begin_date = params[:begin_date]
     @end_date = params[:end_date]
     @select_career = params[:select_career].to_i
-    @result = Survey.where(
-          :created_at => @begin_date .. @end_date,
-          :career_id => @select_career
-        ).all.count
+    @result = Survey.number_of_carrers_between_dates(@begin_date, @end_date, @select_career).count
     erb :inquiries, :layout => :main
   end
 
