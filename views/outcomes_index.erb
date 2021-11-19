@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-
-<html lang="es">
-	<head>
-		<meta charset="utf-8"/>
-		<title> Respuesta </title>
-    	<link rel="stylesheet" type="text/css" href='/stylesheet.css'/>
-    	<link rel="preconnect" href="https://fonts.googleapis.com">
-    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
-	</head>
-
-	<body>
-	
-		<nav class="outcomes-menu">
-      		<a href="/" class="nav-link">Inicio</a>
-      		<a href="careers" class="nav-link">Carreras</a>
-      		<a href="surveys" class="nav-link">Test</a>
-			<a href="inquiries" class="nav-link">Consultas</a>
-    	</nav>
-
-		<div class="outcomes-message">
-			<b><h2>¡<%= @last_survey.username.upcase %>, tenemos la carrera perfecta para vos!</h2></b>
-			<h1 class="outcomes-result">
-				<%= @career.name %>
-			</h1>
-		</div>
-
-	</body> 
-</html>
+<div class="outcomes-message">
+	<b><h2>¡<%= @last_survey.username.upcase %>, tenemos la carrera perfecta para vos!</h2></b>
+	<h1 class="outcomes-result">
+	<%= @career.name %>
+	</h1>
+</div>
